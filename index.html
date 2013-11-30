@@ -13,3 +13,9 @@ layout: default
 <p>Ich freu mich, so nette Nachbarn im Haus zu haben! :)</p>
 <img src="http://i.stack.imgur.com/e8nZC.gif" />
 <p><a href=kittens.html>To the Kittens!!!</a></p>
+
+<ul>
+    {% for post in site.posts %}
+        <li><a href="\{{ post.url }}">{{ post.title }}</a></li>
+    {% endfor %}
+</ul>
